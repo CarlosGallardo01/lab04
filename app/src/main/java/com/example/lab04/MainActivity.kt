@@ -38,12 +38,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
-@Composable
-fun MiLista() {
-    LazyColumn {
-        items(5) { index -> Text(text = "Elemento $index") }
-    }
-}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
@@ -51,3 +46,11 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+@Composable
+fun MiLista() {
+    LazyColumn {
+        items(5) { index -> Text(text = "Elemento $index") }
+    }
+}
+

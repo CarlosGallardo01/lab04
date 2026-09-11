@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab04.ui.theme.Lab04Theme
-
+import androidx.compose.material3.FloatingActionButton
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,4 +53,10 @@ fun MiLista() {
         items(5) { index -> Text(text = "Elemento $index") }
     }
 }
-
+//boton
+@Composable
+fun MiBotonFlotante() {
+    FloatingActionButton(onClick = { /* Acción */ }) {
+        Text("+")
+    }
+}
